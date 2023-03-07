@@ -6,13 +6,13 @@ import {getFirestore} from "firebase/firestore";
 // require("dotenv").config();
 
 const firebaseConfig = {
-  apiKey2:process.env.REACT_APP_APIKEY,
+  apiKey:process.env.REACT_APP_APIKEY,
   authDomain:process.env.REACT_APP_AUTHDOMAIN,
-  projectId2: process.env.REACT_APP_PROJECTID,
-  storageBucket2: process.env.REACT_APP_STORAGEBUCKET,
-  messagingSenderId2: process.env.REACT_APP_MESSAGINGSENDERID,
-  appId2:process.env.REACT_APP_APPID,
-  measurementId2: process.env.REACT_APP_MEASUREMENTID
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+  appId:process.env.REACT_APP_APPID,
+  measurementId: process.env.REACT_APP_MEASUREMENTID
 };
 console.log(process.env.REACT_APP_APIKEY);
 // Initialize Firebase

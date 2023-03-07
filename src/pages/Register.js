@@ -1,7 +1,7 @@
 import React from 'react'
 import Add from "../img/icons8-image-64.png"
 import { createUserWithEmailAndPassword,updateProfile } from "firebase/auth";
-import { auth, storage,db } from "../firebase"
+import { auth,db,storage } from "../firebase"
 import {useState} from 'react'
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore"; 
@@ -71,11 +71,14 @@ export const Register = () => {
           <button>Sign Up</button>
           {err && <span>Something Went Wrong</span>}
         </form>
-        <p>You do have an account?<Link to="/register">Login</Link></p>
+        <p>You do have an account?<Link to="/login">Login</Link></p>
       </div>
     </div>
   )
 }
 
 export default Register;
+
+
+
 
